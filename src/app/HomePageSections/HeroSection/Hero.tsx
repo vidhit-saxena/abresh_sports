@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
             {/* Carousel Container */}
             <div className="relative z-10 w-full h-full flex items-center justify-center">
                 {/* Centered Carousel */}
-                <div className="relative w-[70%] h-[85%] bg-cover bg-center rounded-lg shadow-lg overflow-hidden">
+                <div className="relative w-[80%] h-[85%] bg-cover bg-center rounded-lg shadow-lg overflow-hidden">
                     {/* Carousel Image */}
                     <div
                         className="absolute inset-0 bg-cover bg-center brightness-110"
@@ -65,25 +65,25 @@ const Hero: React.FC = () => {
 
                     {/* Text and Overlay */}
                     <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-40 p-4">
-                        <h1 className="text-white text-5xl font-bold mb-4 uppercase">{slides[currentSlide].title}</h1>
+                        <h1 className="text-white text-3xl font-bold mb-4 uppercase md:text-5xl">{slides[currentSlide].title}</h1>
                         <p className="text-white text-lg max-w-lg">{slides[currentSlide].description}</p>
 
                         {/* Pagination */}
-                        {/* <div className="flex justify-center space-x-2 mt-6">
+                        <div className="flex justify-center space-x-2 mt-6">
                             {slides.map((slide, index) => (
                                 <button
                                     key={slide.id}
-                                    className={`w-4 h-4 rounded-full ${currentSlide === index ? "bg-white" : "bg-gray-400"
+                                    className={`w-2 h-2 rounded-full ${currentSlide === index ? "bg-white" : "bg-gray-400"
                                         }`}
                                     onClick={() => setCurrentSlide(index)}
                                     aria-label={`Go to slide ${index + 1}`}
                                 ></button>
                             ))}
-                        </div> */}
+                        </div>
                     </div>
 
                     {/* Navigation Arrows */}
-                    <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
+                    <div className="absolute top-3/4 md:top-2/3 lg:top-1/2 left-4 transform -translate-y-1/2">
                         <button
                             onClick={handlePrev}
                             className="text-white bg-black bg-opacity-50 p-3 rounded-md hover:bg-opacity-75 focus:outline-none"
@@ -101,7 +101,7 @@ const Hero: React.FC = () => {
                             </svg>
                         </button>
                     </div>
-                    <div className="absolute top-1/2 right-4 transform -translate-y-1/2">
+                    <div className="absolute top-3/4 md:top-2/3 lg:top-1/2 right-4 transform -translate-y-1/2">
                         <button
                             onClick={handleNext}
                             className="text-white bg-black bg-opacity-50 p-3 rounded-md hover:bg-opacity-75 focus:outline-none"

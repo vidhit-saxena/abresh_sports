@@ -16,9 +16,10 @@ interface EventCardProps {
 const EventCard: FC<EventCardProps> = ({ event }) => {
     return (
         <div className="relative bg-white shadow-lg rounded-sm overflow-hidden">
+
             {/* Image Section with Overlay */}
             <div
-                className="h-48 bg-cover bg-center relative"
+                className="h-64 bg-cover bg-center relative"
                 style={{ backgroundImage: `url(${event.image})` }}
             >
                 <div className="absolute top-0 left-0 right-0 flex justify-between font-medium p-2 text-white text-xs bg-gradient-to-t from-transparent to-black/60 uppercase">

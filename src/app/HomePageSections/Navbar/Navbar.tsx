@@ -1,6 +1,8 @@
 'use client';
 import { useState } from "react";
 import Link from "next/link";
+import UpcomingEventsPage from "@/app/UpcomingEventsPage/page"
+import OurCoachesPage from "@/app/OurCoachesPage/page"
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +11,11 @@ const Navbar = () => {
         <nav className="bg-yellow-400 px-4 py-3 md:px-10">
             <div className="flex justify-between items-center">
                 {/* Logo */}
-                <div className="text-2xl font-bold text-blue-900">Logo</div>
+                {/* <div className="text-2xl font-bold text-blue-900">Logo</div> */}
+                <div className="w-10 h-10">
+                    <img src="/images/logo.svg" alt="Logo" className="w-full h-full" />
+                </div>
+
 
                 {/* Hamburger Menu (Small Devices) */}
                 <div className="md:hidden">
@@ -54,8 +60,8 @@ const Navbar = () => {
                 {/* Links (Desktop) */}
                 <div className="hidden md:flex space-x-6 text-blue-900 font-medium">
                     <Link href="/" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Home</Link>
-                    <Link href="/events" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Upcoming Events</Link>
-                    <Link href="/coaches" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Our Coaches</Link>
+                    <Link href="/UpcomingEventsPage" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Upcoming Events</Link>
+                    <Link href="/OurCoachesPage" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Our Coaches</Link>
                     <Link href="/athletes" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Our Athletes</Link>
                     <Link href="/contact" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Contact Us</Link>
                 </div>
@@ -67,10 +73,10 @@ const Navbar = () => {
                     <Link href="/" className="hover:text-white" onClick={() => setIsMenuOpen(false)}>
                         Home
                     </Link>
-                    <Link href="/events" className="hover:text-white" onClick={() => setIsMenuOpen(false)}>
+                    <Link href="/UpcomingEventsPage" className="hover:text-white" onClick={() => setIsMenuOpen(false)}>
                         Upcoming Events
                     </Link>
-                    <Link href="/coaches" className="hover:text-white" onClick={() => setIsMenuOpen(false)}>
+                    <Link href="/OurCoachesPage" className="hover:text-white" onClick={() => setIsMenuOpen(false)}>
                         Our Coaches
                     </Link>
                     <Link href="/athletes" className="hover:text-white" onClick={() => setIsMenuOpen(false)}>

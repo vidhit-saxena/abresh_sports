@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs: React.FC = () => {
     return (
-        <section className="container mx-auto py-14 px-20 pr-14">
+        <section className="container mx-auto py-14 px-20">
             <div className="flex flex-col lg:flex-row items-center gap-8">
                 {/* Text Content Section */}
                 <div className="text-center lg:text-left lg:w-1/2 mr-6">
@@ -12,14 +12,17 @@ const AboutUs: React.FC = () => {
                         industry. Lorem Ipsum has been the industry's standard dummy text
                         ever.
                     </p>
-                    <button className="px-6 py-2 bg-blue-800 text-white font-semibold rounded-lg shadow hover:bg-blue-900 transition duration-300 uppercase">
+                    {/* <button className="px-6 py-2 bg-blue-800 text-white font-semibold rounded-lg shadow hover:bg-blue-900 transition duration-300 uppercase">
+                        See More
+                    </button> */}
+                    <button className="px-6 py-2 bg-white text-blue-900 border border-solid border-blue-800 font-semibold rounded-lg shadow hover:bg-blue-800 hover:text-white transition duration-300 uppercase">
                         See More
                     </button>
                 </div>
 
 
                 {/* Images Section */}
-                <div className="relative lg:w-1/2 ml-6">
+                <div className="relative lg:w-1/2 ml-16">
                     {/* First Image */}
                     <div className="relative  w-2/3 lg:w-2/3 overflow-hidden rounded-lg shadow-lg">
                         <img
@@ -38,8 +41,14 @@ const AboutUs: React.FC = () => {
                         />
                     </div>
                 </div>
+            </div>
+        </section>
+    );
+};
 
-                {/* Images Section */}
+export default AboutUs;
+
+{/* Images Section */}
                 {/* <div className="relative lg:w-1/2"> */}
                 {/* First Image */}
                 {/* <div className="relative overflow-hidden rounded-lg shadow-lg">
@@ -59,15 +68,6 @@ const AboutUs: React.FC = () => {
                         />
                     </div>
                 </div> */}
-
-
-            </div>
-        </section>
-    );
-};
-
-export default AboutUs;
-
 
 // import React from "react";
 
