@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className=" h-[200] bg-yellow-500 block md:py-14 py-4 w-screen text-sm ">
             <div className=" md:flex md:justify-between md:items-center lg:px-14 md:px-8 px-4">
                 <div className=" align-middle">
-                    <ul className=" flex justify-start align-middle pl-0 text-primary text-md space-x-5 sm:text-md text-center">
+                    <ul className=" flex justify-start align-middle pl-0 text-white space-x-3 md:text-sm lg:text-lg text-center">
                         <li className=" font-bold">
                             <Link href={"/"}>Home</Link>
                         </li>
