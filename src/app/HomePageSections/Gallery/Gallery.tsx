@@ -55,17 +55,17 @@
 import React from "react";
 
 const galleryItems = [
-    { id: 3, type: "video", src: "/images/video1.mp4", alt: "Celebration" },
+    { id: 3, type: "video", src: "/images/video.jpg", alt: "Celebration" },
     { id: 2, type: "image", src: "/images/gallery1.jpg", alt: "Team Photo" },
     { id: 1, type: "image", src: "/images/gallery1.jpg", alt: "Soccer Match" },
     { id: 4, type: "image", src: "/images/gallery1.jpg", alt: "Trophy" },
-    { id: 5, type: "video", src: "/images/video2.mp4", alt: "Match Highlights" },
-    { id: 8, type: "video", src: "/images/video3.mp4", alt: "Player Skills" },
+    { id: 5, type: "video", src: "/images/video.jpg", alt: "Match Highlights" },
+    { id: 8, type: "video", src: "/images/video.jpg", alt: "Player Skills" },
     { id: 6, type: "image", src: "/images/gallery1.jpg", alt: "Basketball Trophy" },
     { id: 7, type: "image", src: "/images/gallery1.jpg", alt: "Training" },
     { id: 9, type: "image", src: "/images/gallery1.jpg", alt: "Tennis Match" },
     { id: 10, type: "image", src: "/images/gallery1.jpg", alt: "Rugby Match" },
-    { id: 11, type: "video", src: "/images/video4.mp4", alt: "Football Highlights" },
+    { id: 11, type: "video", src: "/images/video.jpg", alt: "Football Highlights" },
     // { id: 12, type: "image", src: "/images/gallery1.jpg", alt: "Rugby Match" },
 ];
 

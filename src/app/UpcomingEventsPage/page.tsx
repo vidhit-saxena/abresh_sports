@@ -3,6 +3,8 @@ import { FC } from "react";
 import EventCard, { Event } from "@/app/components/EventCard";
 import Navbar from '../HomePageSections/Navbar/Navbar';
 import EnquiryForm from "@/app/components/EnquiryForm"
+import Footer from '../HomePageSections/Footer/Footer';
+import Enquiry from '../HomePageSections/Enquiry/Enquiry';
 
 const events: Event[] = [
     {
@@ -113,14 +115,6 @@ const events: Event[] = [
 ];
 const UpcomingEventsPage = () => {
     return (
-        // <div className="px-4 py-10">
-        //     <h1 className="text-center text-3xl font-bold text-blue-600 mb-8">UPCOMING EVENTS</h1>
-        //     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        //         {events.map((event) => (
-        //             <EventCard key={event.id} event={event} />
-        //         ))}
-        //     </div>
-        // </div>
         <>
             <Navbar />
             {/* <div className="px-10 py-10">
@@ -145,7 +139,8 @@ const UpcomingEventsPage = () => {
                 </div>
             </div>
             
-            <EnquiryForm />
+            <Enquiry />
+            <Footer />
         </>
     );
 };

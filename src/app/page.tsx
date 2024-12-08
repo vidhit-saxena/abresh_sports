@@ -9,20 +9,34 @@ import Recognition from "@/app/HomePageSections/Recognition/Recognition"
 import BookTraining from "@/app/HomePageSections/BookTraining/BookTraining"
 import CoachForm from "@/app/Forms/CoachForm"
 import RegisterAcademy from "@/app/HomePageSections/RegisterAcademy/RegisterAcademy"
+import ContactUs from "./HomePageSections/ConatctUS/ContactUs";
+import Branches from "./HomePageSections/Branches/Branches";
+import OurCoaches from "./HomePageSections/OurCoaches/OurCoaches";
+import OurAthletes from "./HomePageSections/OurAthletes/OurAthletes";
+import BookSession from "./HomePageSections/Register/BookSession";
+import Enquiry from "./HomePageSections/Enquiry/Enquiry";
+import Footer from "./HomePageSections/Footer/Footer";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
-      <AboutUs />
       <CompanyLogos />
+      <AboutUs />
       <UpcomingEvents />
       <Gallery />
       <Recognition />
       <BookTraining />
+      <OurCoaches />
+      <OurAthletes />
       <RegisterAcademy />
-      {/* <CoachForm /> */}
+      <Branches />
+      <Enquiry />
+      <Footer />
+      {/* <BookSession /> */}
+      {/* <ContactUs /> */}
+      {/* <RegisterAcademy /> */}
     </>
   );
 }

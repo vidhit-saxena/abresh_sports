@@ -30,11 +30,11 @@ const CoachCard: React.FC<CoachCardProps> = ({ name, role, image }) => {
                 <h3 className="text-xl font-bold">{name}</h3>
                 <p className="font-semibold">{role}</p>
             </div>
-            <div className="bg-white h-48">
+            <div className="bg-white h-50">
                 <img
                     src={image}
                     alt={name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-fill"
                 />
             </div>
         </div>

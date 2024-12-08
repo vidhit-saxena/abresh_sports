@@ -3,7 +3,8 @@ import { useState } from "react";
 import Link from "next/link";
 import UpcomingEventsPage from "@/app/UpcomingEventsPage/page"
 import OurCoachesPage from "@/app/OurCoachesPage/page"
-
+import ContactUsPage from "@/app/ContactUsPage/page";
+import OurAthletesPage from "@/app/OurAthletesPage/page"
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -62,8 +63,8 @@ const Navbar = () => {
                     <Link href="/" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Home</Link>
                     <Link href="/UpcomingEventsPage" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Upcoming Events</Link>
                     <Link href="/OurCoachesPage" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Our Coaches</Link>
-                    <Link href="/athletes" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Our Athletes</Link>
-                    <Link href="/contact" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Contact Us</Link>
+                    <Link href="/OurAthletesPage" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Our Athletes</Link>
+                    <Link href="/ContactUsPage" className=" hover:bg-white hover:text-yellow-600 rounded-lg p-2">Contact Us</Link>
                 </div>
             </div>
 
@@ -79,10 +80,10 @@ const Navbar = () => {
                     <Link href="/OurCoachesPage" className="hover:text-white" onClick={() => setIsMenuOpen(false)}>
                         Our Coaches
                     </Link>
-                    <Link href="/athletes" className="hover:text-white" onClick={() => setIsMenuOpen(false)}>
+                    <Link href="/OurAthletesPage" className="hover:text-white" onClick={() => setIsMenuOpen(false)}>
                         Our Athletes
                     </Link>
-                    <Link href="/contact" className="hover:text-white" onClick={() => setIsMenuOpen(false)}>
+                    <Link href="/ContactUsPage" className="hover:text-white" onClick={() => setIsMenuOpen(false)}>
                         Contact Us
                     </Link>
                 </div>
